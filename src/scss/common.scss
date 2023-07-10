@@ -1,1 +1,101 @@
 // Заголовки, загальні БЕМ блоки та інше...
+:root {
+   --clr-main: #09aff4;
+   --clr-main-rgb: 9, 175, 244;
+   --clr-accent: #0d1857;
+   --clr-accent-rgb: 13, 24, 87;
+   --clr-secondary: #4820a7;
+   --clr-secondary-rgb: 72, 32, 167;
+   --clr-white: #fff;
+   --clr-white-rgb: 255, 255, 255;
+   --clr-black: #121212;
+   --clr-black-rgb: 18, 18, 18;
+   --clr-grey: #f1f1f1;
+   --clr-grey-rgb: 241, 241, 241;
+   --clr-semi-dark: #b8b8b8;
+   --clr-semi-dark-rgb: 184, 184, 184;
+   --clr-dark-grey: #4d4d4d;
+   --clr-dark-grey-rgb: 77, 77, 77;
+   --clr-extra-dark-grey: #202020;
+   --clr-extra-dark-grey-rgb: 32, 32, 32;
+   --clr-dark-blue: #060922;
+   --clr-dark-blue-rgb: 6, 9, 34;
+   --clr-semi-dark-blue: #000531;
+   --clr-semi-dark-blue-rgb: 0, 5, 49;
+   --clr-danger: #fc0000;
+   --clr-danger-rgb: 252, 0, 0;
+   --clr-success: #217234;
+   --clr-success-rgb: 33, 114, 52;
+   --clr-warning: #9b6a01;
+   --clr-warning-rgb: 155, 106, 1;
+   --ltr-main-font-f: "Jost", "sans-serif";
+   --rtl-main-font-f: "Tajawal", "sans-serif";
+}
+
+.pre-title {
+   position: relative;
+   font-size: 1rem;
+   font-weight: 600;
+   letter-spacing: 1px;
+   text-align: left;
+   text-transform: uppercase;
+   display: block;
+   width: max-content;
+   margin-bottom: 0;
+   padding-left: 10px;
+   padding-right: 10px;
+   color: var(--clr-main);
+   z-index: 5;
+
+   &::before, &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 6px;
+      aspect-ratio: 1/1;
+      border-radius: 1rem;
+      top: 50%;
+      translate: 0 -50%;
+      background-color: var(--clr-main);
+      box-sizing: border-box;
+  }
+
+  &::before {
+      left: 0;
+      right: auto;
+  }
+
+}
+
+.sec-heading {
+   margin-bottom: 0.75rem;
+   font-size: 3rem;
+   font-weight: 500;
+   text-transform: capitalize;
+   letter-spacing: 1.5px;
+   line-height: 1.3;
+}
+
+.subtitle {
+   font-size: 1rem;
+   font-weight: 600;
+   letter-spacing: 1px;
+   text-align: left;
+   text-transform: uppercase;
+   display: block;
+   width: max-content;
+   margin-bottom: 0;
+   padding-left: 10px;
+   padding-right: 10px;
+   color: var(--clr-main);
+}
+
+.read-more {
+    text-transform: capitalize;
+    color: var(--clr-main);
+    font-weight: 600;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out 0s;
+}
